@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="img/iRmz9lCMBD2.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <title>Facebook</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0 mb-3">
+                <nav class="navbar navbar-expand-md navbar-light">
+
+                    <a class="navbar-brand" href="#"><img src="./img/Brand-f.png" alt="Logo" className="img-fluid"></a>
+
+                    <form class="form-inline my-2 my-lg-0 d-none d-md-block">
+                        <img src="./img/search.png" alt="Search" className="img-fluid">
+                        <input class="form-control mr-sm-2 pl-4" type="search" placeholder="Search Facebook" aria-label="Search">
+                    </form>
+
+                    <div class="home">
+                        <a href="#"><img src="./img/home.png" alt="home" className="img-fluid"></a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto d-flex- align-items-center">
+
+                            <li class="nav-item user py-1">
+                                <div>
+                                    <img src="./img/User1.png" alt="User" className="img-fluid d-inline-block">
+                                    <p class='m-0 d-inline-block pl-1'>Rafsan</p>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a class="nav-link dropdown-toggle float-right" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                                <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                                    <div class="hover py-2">
+                                        <img src="./img/Out.png" alt="Logout" class="d-inline-block mr-2">
+                                        <p class="d-inline-block m-0"><a href="#">Logout</a></p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container px-0 px-md-5 mb-5">
+            <div class="row px-0 px-md-5">
+                <div class="col-12">
+                    <div class="content-question p-4">
+
+                        <header class="text-center">
+                            <h1 class="d-inline-block mb-0">Questions ?</h1>
+                        </header>
+                        <hr>
+
+                        <div class="question text-center p-5">
+                            <img src="./img/unliked.png" alt="Unliked">
+                            <p class="py-3 m-0">Have you tagged on your facebook <span>friends</span></p>
+                            <img src="./img/incognited.png" alt="incognited">
+                        </div>
+
+                        <div class="button">
+                            <button id="addFriend"><span class="spinner-border spinner-border-sm d-none" id="spinner1"></span>Yes</button>
+                            <button id="removeFriend"><span class="spinner-border spinner-border-sm d-none" id="spinner2"></span>No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <div class="background hidden" id="background">
+        <p id="emoji" class="hidden" style="font-size:100px">&#128578;</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/friends-question.js"></script>
+</body>
+
+</html>
